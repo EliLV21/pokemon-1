@@ -17,6 +17,20 @@ function nuevoPokemon(){
                               parseInt(puntosAtaque.value));
     pokemones.push(pokemon);
     console.log(pokemones);
+    mostrarNombre();
+    
+}
+function mostrarNombre(){
+    var listaPokemon = document.getElementById("listaPokemon");
+    pokemones.forEach(function(pokemon){
+        var elemento = document.createElement("option");
+        elemento.text = pokemones.nombre;
+        listaPokemon.add(elemento);
+    });
     
 }
 
+/*var x = document.getElementById("mySelect");
+    var option = document.createElement("option");
+    option.text = "Kiwi";
+    x.add(option);*/
