@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x" href="assets/favicon/pica.ico">
     <title>Pokedex</title>
   </head>
-  <body>
+  <body background="http://sm.ign.com/ign_latam/screenshot/default/landscape-1456483171-pokemon2_y5n9.jpg" style="background-repeat:no-repeat;background-position: right center">
+      <h1 align="center">Pokedex</h1>
       <section> 
           <input type="text" id="nombrePokemon" placeholder="Nombre Pokemon">
           <input type="text" id="colorPokemon" placeholder="Color Pokemon">
@@ -13,9 +14,19 @@
           <button id="crearPokemon" onclick="nuevoPokemon()">Agregar Pokemon</button>
           <br>
       </section>
-      <select id="listaPokemon">
+      <h3>Lista de Pokemones</h3>
+      <section id="listaPokemon">
+      </section>
+      <h3>Batalla Pokemon</h3>
+      <select id="batallaPokemon">
       </select>
+      <select id="batallaPokemon2">
+      </select>
+      <button onclick="batallaPokemon()">Batalla Pokemon</button>
+      <section id="resultadoBatalla">
+      </section>
       <script type="text/javascript" src="assets/js/main.js">
       </script>
+      <img src="http://sm.ign.com/ign_latam/screenshot/default/landscape-1456483171-pokemon2_y5n9.jpg"></img>
   </body>
 </html>
